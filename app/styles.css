@@ -1,0 +1,66 @@
+/** ESTILOS PRINCIPALES DE LA VISTA **/
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+[ui-view="main"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+[ui-view="main"] .wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+[ui-view="main"] .wrapper h1 {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+*, div, li, p, h1, h2, h3, h4, h5, a, span, html, img {
+	-webkit-font-smoothing: antialiased!important;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: geometricPrecision;
+}
+
+/* Redefining bootstrap styles */
+.container .jumbotron,
+.nav-pills > li > a,
+.btn, .form-control, pre {
+	border-radius: 0;
+}
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+	background: #FFF;
+}
+
+
+
